@@ -16,6 +16,8 @@ import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -35,7 +37,7 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Cole Cancellieri',
+  title: 'Daniel Mori',
   description: 'Senior Full Stack developer with 8 yrs experience',
 };
 
@@ -60,18 +62,18 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Cole Cancellieri.`,
+  name: `I'm Daniel Mori.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Highly skilled and innovative <strong className="text-stone-100">software development professional</strong> with
-        7 years of hands-on experience in web application development. Focused and efficient learner with practical
-        expertise in mobile apps and automated testing.
+        I'm a <strong className="text-stone-100">go-getter</strong> who's all about hustling hard and making things
+        happen. I've always been passionate about <strong className="text-stone-100">software engineering</strong>, and
+        I've spent the past few years grinding away to build up my skills and experience in that field.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>, plucking my{' '}
-        <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        When I'm not crushing it at work, you can usually find me training{' '}
+        <strong className="text-stone-100">Aikido</strong>, plucking my{' '}
+        <strong className="text-stone-100">banjo</strong>, or just chilling with my crew.
       </p>
     </>
   ),
@@ -95,13 +97,13 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I am a full stack developer. Proficiened in web development`,
+  description: `I am a battle-tested engineer with experience in building bullet-proof SaaS solutions.`,
   aboutItems: [
-    {label: 'Location', text: 'Wake Forest, North Carolina', Icon: MapIcon},
-    {label: 'Age', text: '30', Icon: CalendarIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of North Carolina At Chapel Hill', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'BookedBy', Icon: OfficeBuildingIcon},
+    {label: 'Location', text: 'Stuttgart', Icon: MapIcon},
+    {label: 'Age', text: '32', Icon: CalendarIcon},
+    {label: 'Interests', text: 'Motorcycles, Aikido, Banjos', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of Tokyo', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'TeamViewer', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -131,11 +133,11 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Node.js',
-        level: 8,
+        level: 9,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Python',
+        level: 7,
       },
       {
         name: 'Golang',
@@ -148,11 +150,11 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React Native',
-        level: 9,
+        level: 7,
       },
       {
         name: 'Flutter',
-        level: 4,
+        level: 9,
       },
       {
         name: 'Swift',
@@ -202,6 +204,18 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://www.qvc.de/',
     image: porfolioImage6,
   },
+  {
+    title: 'Cocktail Flow',
+    description: '',
+    url: 'https://apps.apple.com/us/app/cocktail-flow/id486811622',
+    image: porfolioImage7,
+  },
+  {
+    title: 'WeCarCare React Native Theme',
+    description: '',
+    url: 'https://play.google.com/store/apps/details?id=com.wecarcarerntheme',
+    image: porfolioImage8,
+  },
 ];
 
 /**
@@ -210,57 +224,64 @@ export const portfolioItems: PortfolioItem[] = [
 export const education: TimelineItem[] = [
   {
     date: 'May 2015',
-    location: 'University of North Carolina at Chapel Hill',
+    location: 'University of Tokyo',
+    title: 'Master of Computer Science',
+    content: <p></p>,
+  },
+  {
+    date: 'Feb 2012',
+    location: 'Nagoya University',
     title: 'Bachelor of Computer Science',
-    content: <p>3.65 GPA</p>,
+    content: <p></p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'August 2020 - Present',
-    location: 'BookedBy',
-    title: 'Senior Full Stack Developer',
+    date: 'June 2021 - Present',
+    location: 'Teamviewer',
+    title: 'Full Stack Developer',
     content: (
       <p>
-        -Developed dynamic and interactive websites that ensured high traffic, page views, and user experience,
-        resulting in 40% increase in sales revenue.
+        {/* - Implemented efficient & scalable front-end architectures, resulting in improved page load times and reduced
+        bounce rates
         <br />
-        -Managed server deployment to AWS ECS, EC2, and lambda functions for microservices.
+        - Optimized site performance by implementing industry best practices, resulting in increased user satisfaction &
+        retention.
         <br />
-        -Oversaw the development and maintenance of new products, technical documentation and workflows.
-        <br />
-        -Designed, built and automated data flows to save 10+ hours of tedious work per week.
+        - Adopted new technologies, resulting in 30% increase in development efficiency & 20% improvement in product
+        quality
+        <br />- Redesigned project architecture by micro-frontend and mid-tier microservices in React.js and Node.js */}
       </p>
     ),
   },
   {
-    date: 'November 2018 - May 2020',
-    location: 'FaceTouchUp',
+    date: 'April 2016 - June 2021',
+    location: 'Capgemini',
     title: 'Full Stack Developer',
     content: (
       <p>
-        -Designed and developed 20+ front-end and back-end applications utilizing React.js, Node.js, and TypeScript.
+        {/* -Designed and developed 20+ front-end and back-end applications utilizing React.js, Node.js, and TypeScript.
         <br />
         -Developed 10+ new application features and distributed services that support high-scale applications.
         <br />
         -Successfully designed and implemented systems based on N-tier distributed architecture using Java/J2EE
         technologies such as, Core Java, Multithreading, Java Collections, Java I/O, JDBC, Hibernate, Struts, Spring
-        Frameworks.
+        Frameworks. */}
       </p>
     ),
   },
   {
-    date: 'June 2015 - September 2018',
-    location: 'Soft Circles',
+    date: 'August 2014 - March 2016',
+    location: 'NimbusWorks',
     title: 'Web Developer',
     content: (
       <p>
-        -Validated customer interface requirements and assessed impact of needs on available systems.
+        {/* -Validated customer interface requirements and assessed impact of needs on available systems.
         <br /> -Worked with UX/UI design teams to improve existing application and increase conversion rates by 20%.
         <br /> -Migrated an AngularJS codebase into React.
         <br /> -Followed Test Driven Development(TDD) using chai and mocha for unit testing, Enzyme for component-based
-        testing and cypress for end to end testing.
+        testing and cypress for end to end testing. */}
       </p>
     ),
   },
@@ -273,20 +294,21 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Elon Musk',
+      text: `Work like hell. Put in 100 hour weeks every week. If others are putting in 40 hours and you're putting in 100, even if you're doing the same thing, you will achieve in 4 months what it takes them a year.`,
+      image:
+        'https://thumbnail.imgbin.com/10/8/9/imgbin-elon-musk-tesla-motors-tesla-model-3-spacex-tesla-dJ5CpnLwMCeHCuT7A11U0JV38_t.jpg',
     },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
+    // {
+    //   name: 'Jane Doe',
+    //   text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+    //   image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+    // },
+    // {
+    //   name: 'Someone else',
+    //   text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+    //   image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+    // },
   ],
 };
 
@@ -300,18 +322,18 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'colecancellieri0715@gmail.com',
-      href: 'mailto:colecancellieri0715@gmail.com',
+      text: 'daniel.morious@gmail.com',
+      href: 'mailto:daniel.morious@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Wake Forest, North Carolina',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Stuttgart, Germany',
+      href: 'https://www.google.com/maps/place/Wagenburgstra%C3%9Fe+113,+70186+Stuttgart,+Germany/@48.7809004,9.2038841,19.75z',
     },
     {
-      type: ContactType.Github,
-      text: 'WanderingPaladin',
-      href: 'https://github.com/WanderingPaladin',
+      type: ContactType.LinkedIn,
+      text: 'www.linkedin.com/in/daniel-morious',
+      href: 'https://linkedin.com/in/daniel-morious',
     },
   ],
 };
@@ -320,6 +342,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/WanderingPaladin'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/residentevil0803'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/daniel-morious/'},
 ];
