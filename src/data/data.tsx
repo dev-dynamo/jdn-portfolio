@@ -325,16 +325,16 @@ export const contact: ContactSection = {
       text: 'daniel.morious@gmail.com',
       href: 'mailto:daniel.morious@gmail.com',
     },
-    {
-      type: ContactType.Location,
-      text: 'Stuttgart, Germany',
-      href: 'https://www.google.com/maps/place/Wagenburgstra%C3%9Fe+113,+70186+Stuttgart,+Germany/@48.7809004,9.2038841,19.75z',
-    },
-    {
-      type: ContactType.LinkedIn,
-      text: 'www.linkedin.com/in/daniel-morious',
-      href: 'https://linkedin.com/in/daniel-morious',
-    },
+    // {
+    //   type: ContactType.Location,
+    //   text: 'Stuttgart, Germany',
+    //   href: 'https://www.google.com/maps/place/Wagenburgstra%C3%9Fe+113,+70186+Stuttgart,+Germany/@48.7809004,9.2038841,19.75z',
+    // },
+    // {
+    //   type: ContactType.LinkedIn,
+    //   text: 'www.linkedin.com/in/daniel-morious',
+    //   href: 'https://linkedin.com/in/daniel-morious',
+    // },
   ],
 };
 
@@ -343,5 +343,5 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/residentevil0803'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/daniel-morious/'},
+  // {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/daniel-morious/'},
 ];
