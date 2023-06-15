@@ -2,7 +2,7 @@ import {
   AcademicCapIcon,
   CalendarIcon,
   DownloadIcon,
-  MapIcon,
+  // MapIcon,
   OfficeBuildingIcon,
   SparklesIcon,
 } from '@heroicons/react/outline';
@@ -99,7 +99,7 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I am a battle-tested engineer with experience in building bullet-proof SaaS solutions.`,
   aboutItems: [
-    {label: 'Location', text: 'Stuttgart', Icon: MapIcon},
+    // {label: 'Location', text: 'Stuttgart', Icon: MapIcon},
     {label: 'Age', text: '32', Icon: CalendarIcon},
     {label: 'Interests', text: 'Motorcycles, Aikido, Banjos', Icon: SparklesIcon},
     {label: 'Study', text: 'University of Tokyo', Icon: AcademicCapIcon},
