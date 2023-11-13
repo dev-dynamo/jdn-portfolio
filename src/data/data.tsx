@@ -2,13 +2,13 @@ import {
   AcademicCapIcon,
   CalendarIcon,
   DownloadIcon,
-  // MapIcon,
+  MapIcon,
   OfficeBuildingIcon,
   SparklesIcon,
 } from '@heroicons/react/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-// import LinkedInIcon from '../components/Icon/LinkedInIcon';
+import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -37,8 +37,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Daniel Mori',
-  description: 'Senior Full Stack developer with 8 yrs experience',
+  title: 'Jonathan Nguyen',
+  description: 'Senior Full Stack developer with 9 yrs experience',
 };
 
 /**
@@ -62,7 +62,7 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Daniel Mori.`,
+  name: `I'm Jon.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -99,11 +99,11 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I am a battle-tested engineer with experience in building bullet-proof SaaS solutions.`,
   aboutItems: [
-    // {label: 'Location', text: 'Stuttgart', Icon: MapIcon},
+    {label: 'Location', text: 'Dublin, Ireland', Icon: MapIcon},
     {label: 'Age', text: '32', Icon: CalendarIcon},
     {label: 'Interests', text: 'Motorcycles, Aikido, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Tokyo', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'TeamViewer', Icon: OfficeBuildingIcon},
+    {label: 'Study', text: 'SUTD', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Fenergo', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -223,24 +223,24 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'May 2015',
-    location: 'University of Tokyo',
-    title: 'Master of Computer Science',
+    date: 'July 2015',
+    location: 'SUTD (Singapore University of Technology and Design)',
+    title: 'Bachelor of Computer Science',
     content: <p></p>,
   },
   {
-    date: 'Feb 2012',
-    location: 'Nagoya University',
-    title: 'Bachelor of Computer Science',
+    date: 'April 2011',
+    location: 'VNUHCM - University of Science',
+    title: 'Diploma of Computer Systems Technology',
     content: <p></p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'June 2021 - Present',
-    location: 'Teamviewer',
-    title: 'Full Stack Developer',
+    date: 'August 2021 - Present',
+    location: 'Fenergo',
+    title: 'Senior Full Stack Developer',
     content: (
       <p>
         {/* - Implemented efficient & scalable front-end architectures, resulting in improved page load times and reduced
@@ -256,7 +256,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'April 2016 - June 2021',
+    date: 'September 2015 - July 2021',
     location: 'Capgemini',
     title: 'Full Stack Developer',
     content: (
@@ -268,20 +268,6 @@ export const experience: TimelineItem[] = [
         -Successfully designed and implemented systems based on N-tier distributed architecture using Java/J2EE
         technologies such as, Core Java, Multithreading, Java Collections, Java I/O, JDBC, Hibernate, Struts, Spring
         Frameworks. */}
-      </p>
-    ),
-  },
-  {
-    date: 'August 2014 - March 2016',
-    location: 'NimbusWorks',
-    title: 'Web Developer',
-    content: (
-      <p>
-        {/* -Validated customer interface requirements and assessed impact of needs on available systems.
-        <br /> -Worked with UX/UI design teams to improve existing application and increase conversion rates by 20%.
-        <br /> -Migrated an AngularJS codebase into React.
-        <br /> -Followed Test Driven Development(TDD) using chai and mocha for unit testing, Enzyme for component-based
-        testing and cypress for end to end testing. */}
       </p>
     ),
   },
@@ -322,19 +308,23 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'danielmori140@gmail.com',
-      href: 'mailto:danielmori140@gmail.com',
+      text: 'jdnguyen928@gmail.com',
+      href: 'mailto:jdnguyen928@gmail.com',
     },
-    // {
-    //   type: ContactType.Location,
-    //   text: 'Stuttgart, Germany',
-    //   href: 'https://www.google.com/maps/place/Wagenburgstra%C3%9Fe+113,+70186+Stuttgart,+Germany/@48.7809004,9.2038841,19.75z',
-    // },
-    // {
-    //   type: ContactType.LinkedIn,
-    //   text: 'www.linkedin.com/in/daniel-morious',
-    //   href: 'https://linkedin.com/in/daniel-morious',
-    // },
+    {
+      type: ContactType.Phone,
+      text: '+353 (0)1 443 4747',
+    },
+    {
+      type: ContactType.Location,
+      text: 'Dublin, Ireland',
+      href: 'https://www.google.com/maps/place/47+Fortfield+Dr,+Terenure,+Dublin+6W,+Co.+Dublin,+D6W+XW14,+Ireland/@53.3014104,-6.302647,17z',
+    },
+    {
+      type: ContactType.LinkedIn,
+      text: 'www.linkedin.com/in/jonathan-daniel-nguyen',
+      href: 'https://linkedin.com/in/jonathan-daniel-nguyen',
+    },
   ],
 };
 
@@ -343,5 +333,5 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/residentevil0803'},
-  // {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/daniel-morious/'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/jonathan-daniel-nguyen'},
 ];
