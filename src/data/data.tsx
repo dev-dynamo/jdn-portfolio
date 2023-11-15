@@ -78,12 +78,12 @@ export const heroData: Hero = {
     </>
   ),
   actions: [
-    {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
-      primary: true,
-      Icon: DownloadIcon,
-    },
+    // {
+    //   href: '/assets/resume.pdf',
+    //   text: 'Resume',
+    //   primary: true,
+    //   Icon: DownloadIcon,
+    // },
     {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
@@ -99,8 +99,8 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I am a battle-tested engineer with experience in building bullet-proof SaaS solutions.`,
   aboutItems: [
-    {label: 'Location', text: 'Dublin, Ireland', Icon: MapIcon},
-    {label: 'Age', text: '32', Icon: CalendarIcon},
+    // {label: 'Location', text: 'Dublin, Ireland', Icon: MapIcon},
+    // {label: 'Age', text: '32', Icon: CalendarIcon},
     {label: 'Interests', text: 'Motorcycles, Aikido, Banjos', Icon: SparklesIcon},
     {label: 'Study', text: 'SUTD', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Fenergo', Icon: OfficeBuildingIcon},
@@ -311,20 +311,20 @@ export const contact: ContactSection = {
       text: 'jdnguyen928@gmail.com',
       href: 'mailto:jdnguyen928@gmail.com',
     },
-    {
-      type: ContactType.Phone,
-      text: '+353 (0)1 443 4747',
-    },
-    {
-      type: ContactType.Location,
-      text: 'Dublin, Ireland',
-      href: 'https://www.google.com/maps/place/47+Fortfield+Dr,+Terenure,+Dublin+6W,+Co.+Dublin,+D6W+XW14,+Ireland/@53.3014104,-6.302647,17z',
-    },
-    {
-      type: ContactType.LinkedIn,
-      text: 'www.linkedin.com/in/jonathan-daniel-nguyen',
-      href: 'https://linkedin.com/in/jonathan-daniel-nguyen',
-    },
+    // {
+    //   type: ContactType.Phone,
+    //   text: '+353 (0)1 443 4747',
+    // },
+    // {
+    //   type: ContactType.Location,
+    //   text: 'Dublin, Ireland',
+    //   href: 'https://www.google.com/maps/place/47+Fortfield+Dr,+Terenure,+Dublin+6W,+Co.+Dublin,+D6W+XW14,+Ireland/@53.3014104,-6.302647,17z',
+    // },
+    // {
+    //   type: ContactType.LinkedIn,
+    //   text: 'www.linkedin.com/in/jonathan-daniel-nguyen',
+    //   href: 'https://linkedin.com/in/jonathan-daniel-nguyen',
+    // },
   ],
 };
 
