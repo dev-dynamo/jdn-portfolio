@@ -1,8 +1,8 @@
 import {
   AcademicCapIcon,
-  CalendarIcon,
-  DownloadIcon,
-  MapIcon,
+  // CalendarIcon,
+  // DownloadIcon,
+  // MapIcon,
   OfficeBuildingIcon,
   SparklesIcon,
 } from '@heroicons/react/outline';
